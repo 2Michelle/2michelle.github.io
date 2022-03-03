@@ -9,6 +9,8 @@
 
 <img src="dragonspine.jpg" alt="dragonspine" width="1400" height="700">
 
-
+<p>
+<a href="salad.html">salad</a>
+</p>
 </html>
 </!DOCTYPE html>
