@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>oil</title>
+</head>
+<body>
+
+<p>I chased a cat</p>
+
+<img src="cat" alt="cat" width="800" height="450">
+
+<p>
+<a href="salad.html">salad</a>
+</p>
+
+</html>
+</!DOCTYPE html>
