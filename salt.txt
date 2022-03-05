@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>salt</title>
+</head>
+<body>
+<h1>Did you see?</h1>
+<p>I found dogs today</p>
+
+<img src="dog ina.jpg" alt="dog ina" width="300" height="160">
+
+<p>
+<a href="salad.html">salad</a>
+</p>
+
+</html>
+</!DOCTYPE html>
