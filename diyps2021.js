@@ -6,13 +6,14 @@ var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
 // preload() runs once, it may make you wait
-//  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
+//  img = loadImage('bearcutes.jpg');  // bearcutes.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('https://dma-git.github.io/images/74.png');
+  img = loadImage('https://2michelle.github.io/bear.png');
+  img2 = loadImage('https://2michelle.github.io/purple_cat.png');
 }
 
 function setup() {
-createCanvas(600, 400);  // canvas size
+createCanvas(640, 640);  // canvas size
 background(screenbg);   // use our background screen color
 
 }
@@ -33,10 +34,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // graphic function
 
  if (toolChoice == '1' ) {  // first tool
-   
-    stroke(01);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    
+     img1 = loadImage('https://2michelle.github.io/nyan.png');
+     
   } else if (toolChoice == '2') { // second tool
 
     stroke(20);
@@ -80,6 +79,10 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     image(img, mouseX, mouseY);
     
   }
+   else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
+    image(img2, mouseX, mouseY);
+    
+  }
  }
  
 function testbox(r, g, b) {
@@ -94,20 +97,24 @@ function testbox(r, g, b) {
 function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
+
+    } if (toolChoice == '1' || toolChoice == '1') { // 1 places the image we pre-loaded
+    image(img1, mouseX, mouseY);  
+    }
+    
   if (key == 'x' || key == 'X') {
     background(screenbg); // set the screen back to the background color
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen
-  }
+     
 }
 
-function saveme(){
+function saveme() {
     //this will save the name as the intials, date, time and a millis counting number.
     // it will always be larger in value then the last one.
   filename=initials+day() + hour() + minute() +second();
   if (second()!=lastscreenshot) { // don't take a screenshot if you just took one
-    saveCanvas(filename, 'jpg');
+    saveCanvas(filename, 'png');
   }
   lastscreenshot=second(); // set this to the current second so no more than one per second
-  
-}
+  let img;}
