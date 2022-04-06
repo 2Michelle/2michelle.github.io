@@ -5,9 +5,9 @@
 
 
 <ul>
-  <li><a href="https://2michelle.github.io/Glitch.html">Glitch</a></li>
-  <li><a href="https://2michelle.github.io/meme.html">Meme</a></li>
-  <li><a href="https://2michelle.github.io/diyps2022.html">Diyps2022</a></li>
+  <li><a href="Glitch.html">Glitch</a></li>
+  <li><a href="meme.html">Meme</a></li>
+  <li><a href="diyps2022.html">Diyps2022</a></li>
  
 </ul>
 
