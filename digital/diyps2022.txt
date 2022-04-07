@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul>
+  <li><a href="Glitch.html">Glitch</a></li>
+  <li><a href="meme.html">Meme</a></li>
+  <li><a href="diyps2022.html">Diyps2022</a></li>
+ 
+</ul>
+<h1>Project</h1>
+
+<p>This is my DIY Photoshop page</p>
+
+<img src="diy.png" alt="diy">
+
+</body>
+</html>
