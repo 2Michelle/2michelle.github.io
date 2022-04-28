@@ -26,6 +26,27 @@ function draw() {
   levelOne();
   text(("Day count until storm: " + score), width/2, 40);
 } // end draw
+}
+if(gameState =="L2"){
+    background(135);
+  levelTwo();
+}
+if(gameState =="L3"){
+    background(50);
+  levelThree();
+}
+if(gameState =="Win"){
+    background(50);
+  win();
+}
+  text(("Score: " + score), width/2, 40);
+} // end of draw
+
+function beginGame(){
+ if (mouseIsPressed === true) {
+  gameState="L1";  
+ } // end of if mousIsPressed
+} // end of beginGame
 
 
 function levelOne(){
@@ -36,19 +57,12 @@ var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
     bally = random(height-5);
     score = score +1;
   } // end if
-  if (score>=5){
+  if (score>=10){
     gameState= "L2";
   }
 
   image(img1, ballx, bally);
 } // end level one
-
-}
-  line(ballx+20, bally+20, mouseX, mouseY);
-  image(img1, ballx, bally);
-} // end of level 1
-
-
 function levelTwo(){
   text("level 2", width/2, height-20);
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
