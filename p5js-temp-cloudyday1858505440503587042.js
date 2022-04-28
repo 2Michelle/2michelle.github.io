@@ -2,7 +2,7 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score =0;
-var gameState="L1";
+var gameState="You are like a cloudy day";
 
 var img;
 
@@ -29,7 +29,7 @@ function draw() {
 
 
 function levelOne(){
-  text("Level 1", width/2, height-20);
+  text("You are like a cloudy day", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
     ballx = random(width);

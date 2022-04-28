@@ -2,14 +2,14 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score =0;
-var gameState="L1";
+var gameState="You are like a cloudy day";
 
 var img;
 
 
 function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
-  img1=loadImage('https://2michelle.github.io/pls.png');
+  img1=loadImage('https://2michelle.github.io/sun.jpg');
 }
 
 function setup() {
