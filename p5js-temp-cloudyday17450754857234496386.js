@@ -2,14 +2,14 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score =0;
-var gameState="You are like a cloudy day";
+var gameState="L1";
 
 var img;
 
 
 function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
-  img1=loadImage('2michelle.github.io/sun.jpg');
+  img1=loadImage('https://2michelle.github.io/sun.jpg');
 }
 
 function setup() {
@@ -24,23 +24,21 @@ function setup() {
 function draw() {
   background (img);
   levelOne();
-  text(("Score: " + score), width/2, 40);
+  text(("Day count until storm: " + score), width/2, 40);
 } // end draw
 
 
 function levelOne(){
   text("You are like a cloudy day", width/2, height-20);
-  var distToBall= dist(ballx, bally, mouseX, mouseY);
-  if (distToBall <ballSize/2){
-    ballx = random(width);
-    bally= random(height);
-    score= score +1;
+var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
+  if (distToBall<ballSize/2){
+    ballx= random(width-5);
+    bally = random(height-5);
+    score = score +1;
+  } // end if
+  if (score>=5){
+    gameState= "L2";
   }
-  if(score>5){
-// call level 2
-  fill(random(255));
-  }
-  
 
   image(img1, ballx, bally);
 } // end level one
