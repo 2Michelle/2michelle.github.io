@@ -42,3 +42,42 @@ var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
 
   image(img1, ballx, bally);
 } // end level one
+
+}
+  line(ballx+20, bally+20, mouseX, mouseY);
+  image(img1, ballx, bally);
+} // end of level 1
+
+
+function levelTwo(){
+  text("level 2", width/2, height-20);
+  var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
+  if (distToBall<ballSize/2){
+    ballx= random(width-5);
+    bally = random(height-5);
+    score = score +1;
+  } // end if
+  if (score>=10){
+       gameState= "L3";
+  }
+   image(img1, ballx, bally);
+} // end of level 2
+
+function levelThree(){
+  text("level 3", width/2, height-20);
+  var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
+  if (distToBall<ballSize/2){
+    ballx= random(width-5);
+    bally = random(height-5);
+    score = score +1;
+    ballSize=ballSize -1;
+  } // end if
+  if (score>=35){
+       gameState= "Win";
+  }
+      image(img1, ballx, bally, ballSize, ballSize);
+} // end level 3
+
+function win(){
+  text("You Won", width/2, height-20);
+} // end win
