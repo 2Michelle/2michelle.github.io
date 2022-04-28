@@ -9,7 +9,7 @@ var img;
 
 function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
-  img1=loadImage('https://2michelle.github.io/sun.jpg');
+  img1=loadImage('https://2michelle.github.io/sunny.png');
 }
 
 function setup() {
