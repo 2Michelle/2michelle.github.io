@@ -9,6 +9,7 @@ var img;
 
 function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
+  img1=loadImage('https://2michelle.github.io/sun.jpg');
 }
 
 function setup() {
@@ -41,5 +42,5 @@ function levelOne(){
   }
   
 
-  ellipse(ballx, bally, ballSize, ballSize);
+  image(img1, ballx, bally);
 } // end level one

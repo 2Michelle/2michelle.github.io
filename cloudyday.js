@@ -9,6 +9,7 @@ var img;
 
 function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
+  img1=loadImage('https://2michelle.github.io/sun.jpg');
 }
 
 function setup() {
@@ -40,6 +41,6 @@ function levelOne(){
   fill(random(255));
   }
   
-  line(ballx, bally, mouseX, mouseY);
+
   ellipse(ballx, bally, ballSize, ballSize);
 } // end level one
