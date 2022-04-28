@@ -40,6 +40,6 @@ function levelOne(){
   fill(random(255));
   }
   
-  line(ballx, bally, mouseX, mouseY);
+
   ellipse(ballx, bally, ballSize, ballSize);
 } // end level one
