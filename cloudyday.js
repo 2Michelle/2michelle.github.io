@@ -13,7 +13,7 @@ function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
   img1=loadImage('https://2michelle.github.io/sun.png');
   bg = loadImage('https://2michelle.github.io/Cloud.jpg');
-  img2=loadImage('https://2michelle.github.io/Blue.png');
+  img2=loadImage('https://2michelle.github.io/rain.jpg');
 }
 
 function setup() {
@@ -35,6 +35,16 @@ if(gameState =="L1"){
 if(gameState =="L2"){
   background(img2);
   levelTwo();
+ 
+
+function setup() {
+  // The background image must be the same size as the parameters
+  // into the createCanvas() method. In this program, the size of
+  // the image is 720x400 pixels.
+  createCanvas(720, 400);
+    textAlign(CENTER);
+  textSize(20);
+}
   
 }
 if(gameState =="L3"){
