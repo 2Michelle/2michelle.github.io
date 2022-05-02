@@ -13,6 +13,7 @@ function preload() {
   img=loadImage('https://2michelle.github.io/Cloud.jpg');
   img1=loadImage('https://2michelle.github.io/sun.png');
   bg = loadImage('https://2michelle.github.io/Cloud.jpg');
+  img2=loadImage('https://2michelle.github.io/Blue.png');
 }
 
 function setup() {
@@ -32,8 +33,9 @@ if(gameState =="L1"){
 }
 
 if(gameState =="L2"){
-  background(135);
+  background(img2);
   levelTwo();
+  
 }
 if(gameState =="L3"){
     background(50);
@@ -73,7 +75,7 @@ function levelOne(){
 
 
 function levelTwo(){
-  text("level 2", width/2, height-20);
+  text("Bring my sunshine back", width/2, height-20);
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
   if (distToBall<ballSize/2){
     ballx= random(width-5);
