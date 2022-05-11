@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<ul>
+  <li><a href="Glitch.html">Glitch</a></li>
+  <li><a href="meme.html">Meme</a></li>
+  <li><a href="diyps2022.html">Diyps2022</a></li>
+ 
+</ul>
+
+<h1>Project</h1>
+
+<p>This is a series of milk tea snacks that I would have find comfort in on my worst and best days.
+Sweets have always made me feel better. These glitches are made to show how much my day would rely on a cup of milk tea to make me feel functional. </p>
+
+<img src="boba 1.jpg" alt="Boba1">
+<img src="boba 2.jpg" alt="Boba2">
+<img src="Boba 3.jpg" alt="Boba3">
+
+</body>
+</html>
