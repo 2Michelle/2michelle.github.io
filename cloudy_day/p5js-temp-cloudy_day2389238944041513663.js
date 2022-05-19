@@ -10,12 +10,12 @@ var gameState ="L1";
 
 
 function preload() {
-  img=loadImage('https://2michelle.github.io/cloudy_day2/cloud.jpg');
-  img1=loadImage('https://2michelle.github.io/cloudy_day2/sun.png');
-  bg= loadImage('https://2michelle.github.io/cloudy_day2/cloud.jpg');
-  img2=loadImage('https://2michelle.github.io/cloudy_day2/night.jpg');
-  img3=loadImage('https://2michelle.github.io/cloudy_day2/sunset.jpg');
-  img4=loadImage('https://2michelle.github.io/cloudy_day2/sunsad.png'); 
+  img=loadImage('https://2michelle.github.io/cloudy_daypic/cloud.jpg');
+  img1=loadImage('https://2michelle.github.io/cloudy_daypic/sun.png');
+  bg= loadImage('https://2michelle.github.io/cloudy_daypic/cloud.jpg');
+  img2=loadImage('https://2michelle.github.io/cloudy_daypic/night.jpg');
+  img3=loadImage('https://2michelle.github.io/cloudy_daypic/sunset.jpg');
+  img4=loadImage('https://2michelle.github.io/cloudy_daypic/sunsad.png'); 
  
 }
 function setup() {
@@ -138,19 +138,18 @@ function levelThree(){
 
 
  function levelFour(){
-   text("I feel as if i’m quite happy today…", width/2, height-20);
+   text("I feel as if i’m quite happy today", width/2, height-20);
    fill(0,0,255)
 
    var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
    if (distToBall<ballSize/2){
      ballx= random(width-50);
      bally = random(height-50);
-    score = score +1;
+    score = score+1;
   } // end if
   if (score>=40){
     gameState= "L5";
     
-
       
 }
   image(img4, ballx, bally);
@@ -176,21 +175,21 @@ function levelThree(){
 }// end level five
  
  function levelSix(){
-  text("Why is everything so annoying?", width/2, height-20);
+  text("Just do whatever", width/2, height-20);
   fill(0,0,255)
  
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
   if (distToBall<ballSize/2){
     ballx= random(width-50);
     bally = random(height-50);
-   score = score
+   score = score+1
    
   }// end if
   
   if (score>=60){
     gameState= "L1";
     score=0;
-    v2 += 1;
+    v2 = v2 +1;
   }// end level six
   
   image(img1, ballx, bally);
