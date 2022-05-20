@@ -164,12 +164,11 @@ function levelThree(){
    if (distToBall<ballSize/2){
      ballx= random(width-50);
      bally = random(height-50);
-    score = score +1;
+       score = score +1;
   } // end if
   if (score>=50){
     gameState= "L6";
-  
-      
+       
 }
   image(img4, ballx, bally);
 
@@ -183,14 +182,14 @@ function levelThree(){
   if (distToBall<ballSize/2){
     ballx= random(width-50);
     bally = random(height-50);
-   score = score
+     score = score +1;
    
   }// end if
   
   if (score>=60){
     gameState= "L1";
     score=0;
-    v2 += 1;
+    v2=1;
   }// end level six
   
   image(img1, ballx, bally);
